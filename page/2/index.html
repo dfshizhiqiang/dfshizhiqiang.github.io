@@ -45,7 +45,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://ww4.sinaimg.cn/large/006tNc79ly1g425fzzibjj30cs0cswf3.jpg" class="js-avatar">
+			<img src="https://tva1.sinaimg.cn/large/008eGmZEly1gorutddnkvj30cs0csab8.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -99,7 +99,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://ww4.sinaimg.cn/large/006tNc79ly1g425fzzibjj30cs0cswf3.jpg" class="js-avatar">
+				<img src="https://tva1.sinaimg.cn/large/008eGmZEly1gorutddnkvj30cs0csab8.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -145,6 +145,349 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Load-images-from-difference-data-sources" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/27/Load-images-from-difference-data-sources/">使用Glide加载图片系列之一从不同的数据源加载图片</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/27/Load-images-from-difference-data-sources/" class="archive-article-date">
+  	<time datetime="2015-10-27T14:12:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>与其他图片加载库相同，Glide 除了可以加载网络图片之外，也可以加载本地图片。甚至还可以从各种各样奇葩的数据源中加载图片。</p>
+<h4 id="加载网络图片"><a href="#加载网络图片" class="headerlink" title="加载网络图片"></a>加载网络图片</h4><p>很多情况下，我们使用图片加载库就是为了加载网络图片。网络操作是一个很复杂的东西。试想一下，如果没有图片加载库，我们就要手动去下载图片,缓存图片，最后再从文件里面读取 bitmap 并设置到 Imageview 里面。这还算好的，要是在 Listview 里面你会更头疼的。原因我就不说了，你懂的~~再加上各种各样的 Bitmap 操作，保准你再也不想撸代码了。而且 Bitmap 这东西还很占内存，伺候不好，很容易就会引发 OOM，app 吧唧就闪退了！！</p>
+<p>图片加载库的优势就在于此。简简单单一句话，下载，缓存，加载统统搞定。简直就是美好一生的东西。而 Glide 就是这样使人美好一生的东西之一。</p>
+        
+          <a class="article-more-a" href="/2015/10/27/Load-images-from-difference-data-sources/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Glide</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据源</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/27/Load-images-from-difference-data-sources/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Hello-Glide" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/27/Hello-Glide/">使用Glide加载图片系列之零初识Glide</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/27/Hello-Glide/" class="archive-article-date">
+  	<time datetime="2015-10-27T14:04:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>废话不多说，开撸（Junk Words No More Say,Let’s LOL）</p>
+<h4 id="咋添加-Glide-依赖呀？"><a href="#咋添加-Glide-依赖呀？" class="headerlink" title="咋添加 Glide 依赖呀？"></a>咋添加 Glide 依赖呀？</h4><p>一句话（One Word）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile &#39;com.github.bumptech.glide:glide:3.6.1&#39;</span><br></pre></td></tr></table></figure>
+
+<p>不多说(No More Say)。</p>
+<p>PhotoShop:如果你还在用一颗利普斯(eclipse)，请前往 Glide 在 github 上的发布页，下载最新的 jar 包吧，地址是 sha？自己找 →_→</p>
+<h4 id="最简单的加载方式"><a href="#最简单的加载方式" class="headerlink" title="最简单的加载方式"></a>最简单的加载方式</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ImageView targetImageView = (ImageView) findViewById(R.id.imageView);</span><br><span class="line">String internetUrl = <span class="string">&quot;http://i.imgur.com/idojSYm.png&quot;</span>;</span><br><span class="line">Glide</span><br><span class="line">	.with(context)</span><br><span class="line">    .load(internetUrl)</span><br><span class="line">    .into(targetImageView);</span><br></pre></td></tr></table></figure>
+
+<p>这都嘛意思啊？莫慌，我来装下 B:</p>
+<p>.with(Context context),此处的 context 就是你熟悉的 context，没啥不一样的。就是有一点，里面可以是 fragment。</p>
+<p>.load(String imageUrl),你要加载的图片地址，当然也可以是 uri 或者 file,亦或是 R.drawable.xxxx。</p>
+<p>.into(ImageView targetImageView)，你要加载的 Imageview 控件，当然也可以一个 view,不过那都是后话。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Glide</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">图片加载库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/27/Hello-Glide/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Some-tips-with-Glide" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/23/Some-tips-with-Glide/">Glide ：一个专注于平滑滚动的图片加载和缓存库</a>
+    </h1>
+  
+
+        
+        <a href="/2015/08/23/Some-tips-with-Glide/" class="archive-article-date">
+  	<time datetime="2015-08-23T08:19:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在图片加载库烂大街的今天，选择一个适合自己使用的图片加载库已经成为了每一个 Android 开发者的必经之路。现在市面上知名的图片加载库有<a target="_blank" rel="noopener" href="https://github.com/nostra13/Android-Universal-Image-Loader">UIL</a>,<a target="_blank" rel="noopener" href="https://github.com/square/picasso">Picasso</a>,<a target="_blank" rel="noopener" href="https://android.googlesource.com/platform/frameworks/volley/">Volley ImageLoader</a>,<a target="_blank" rel="noopener" href="https://github.com/facebook/fresco">Fresco</a>以及我们今天的主角<a target="_blank" rel="noopener" href="https://github.com/bumptech/glide">Glide</a>。它们各有千秋，不能评定谁一定比谁好，只能说哪一个更适合你。</p>
+<h2 id="我的理解"><a href="#我的理解" class="headerlink" title="我的理解"></a>我的理解</h2><p>下面我来谈一下个人对这些图片加载库的理解，如有错误，还望指教。</p>
+<p><strong>Universal Image Loader</strong>：一个强大的图片加载库，包含各种各样的配置，最老牌，使用也最广泛。</p>
+<p><strong>Picasso</strong>: Square 出品，必属精品。和 OkHttp 搭配起来更配呦！</p>
+<p><strong>Volley ImageLoader</strong>：Google 官方出品，可惜不能加载本地图片~</p>
+<p><strong>Fresco</strong>：Facebook 出的，天生骄傲！不是一般的强大。</p>
+<p><strong>Glide</strong>：Google 推荐的图片加载库，专注于流畅的滚动。</p>
+<p>更多详情请看 stackoverflow 上<a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/29363321/picasso-v-s-imageloader-v-s-fresco-vs-glide">这个问题</a>。</p>
+        
+          <a class="article-more-a" href="/2015/08/23/Some-tips-with-Glide/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Glide</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">图片加载库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/08/23/Some-tips-with-Glide/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Retrofit-Basic-Authentication-on-Android" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/16/Retrofit-Basic-Authentication-on-Android/">Retrofit系列之二：Retrofit的基本身份验证（译）</a>
+    </h1>
+  
+
+        
+        <a href="/2015/07/16/Retrofit-Basic-Authentication-on-Android/" class="archive-article-date">
+  	<time datetime="2015-07-16T11:44:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-07-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是 Retrofit 系列文章的第二篇。将介绍了如何使用 Retrofit 完成用户名/邮箱和密码的身份验证。</p>
+<p>在前面的章节里，我们已经创建了一个初始版本的 API/HTTP 请求客户端。我们会在此基础上增加基本的身份验证功能。</p>
+        
+          <a class="article-more-a" href="/2015/07/16/Retrofit-Basic-Authentication-on-Android/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Retrofit</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">身份验证</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Authentication</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/07/16/Retrofit-Basic-Authentication-on-Android/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-Retrofit-Getting-Started-and-Create-an-Android-Client" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -417,7 +760,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">图片加载库</a>
+                <a href="javascript:void(0)" class="js-tag color2">坑</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SwipeRefreshLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Cache</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -425,7 +776,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Cache</a>
+                <a href="javascript:void(0)" class="js-tag color1">图片加载库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -445,27 +796,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">坑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SwipeRefreshLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">调试</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Retrofit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">身份验证</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Authentication</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -477,7 +816,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据源</a>
+                <a href="javascript:void(0)" class="js-tag color5">身份验证</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Authentication</a>
               </li>
              
               <li class="article-tag-list-item">
